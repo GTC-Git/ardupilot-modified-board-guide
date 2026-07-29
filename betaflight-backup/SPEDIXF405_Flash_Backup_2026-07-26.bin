@@ -1,0 +1,30 @@
+20:33:04 : STM32CubeProgrammer API v2.23.0 | Windows-64Bits 
+20:35:29 : USB speed   : Full Speed (12MBit/s)
+20:35:29 : Manuf. ID   : STMicroelectronics
+20:35:29 : Product ID  : STM32  BOOTLOADER
+20:35:29 : SN          : 3762326E3133
+20:35:29 : DFU protocol: 1.1
+20:35:29 : Board       : --
+20:35:29 : Device ID   : 0x413
+20:35:29 : UPLOADING OPTION BYTES DATA ...
+20:35:29 :   Bank          : 0x00
+20:35:29 :   Address       : 0x1fffc000 
+20:35:29 :   Size          : 16 Bytes
+20:35:29 : UPLOADING ...
+20:35:29 :   Size          : 1024 Bytes
+20:35:29 :   Address       : 0x8000000
+20:35:29 : Read progress:
+20:35:29 : Data read successfully
+20:35:29 : Time elapsed during the read operation is: 00:00:00.004
+20:36:59 : UPLOADING ...
+20:36:59 :   Size          : 1024 Bytes
+20:36:59 :   Address       : 0x8000000
+20:36:59 : Read progress:
+20:36:59 : Data read successfully
+20:36:59 : Time elapsed during the read operation is: 00:00:00.005
+20:38:55 : UPLOADING ...
+20:38:55 :   Size          : 1048576 Bytes
+20:38:55 :   Address       : 0x8000000
+20:38:55 : Read progress:
+20:38:57 : Data read successfully
+20:38:57 : Time elapsed during the read operation is: 00:00:01.848

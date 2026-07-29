@@ -1,0 +1,178 @@
+# 
+
+# diff all
+
+# version
+# Betaflight / STM32F405 (S405) 4.4.3 Jun 25 2024 / 14:08:40 (738127e7e) MSP API: 1.45
+
+# config: YES
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name SPEDIXF405
+manufacturer_id SPDX
+mcu_id 002f00373133470737333237
+signature 
+
+# name: '[]
+
+# resources
+resource SERVO 1 A08
+resource LED_STRIP 1 NONE
+
+# feature
+feature -TELEMETRY
+feature -AIRMODE
+feature SERVO_TILT
+
+# serial
+serial 0 2048 115200 57600 0 115200
+
+# servo
+servo 0 1000 2000 1500 100 5
+
+# beacon
+beacon RX_SET
+
+# aux
+aux 0 0 0 1850 2100 0 0
+aux 1 1 3 900 1325 0 0
+
+# vtxtable
+vtxtable bands 2
+vtxtable channels 8
+vtxtable band 1 BAND-A   A CUSTOM  3330 3350 3370 3390 3410 3430 3450 3470
+vtxtable band 2 BAND-B   B CUSTOM  3170 3190 3210 3230 3250 3270 3290 3310
+vtxtable powerlevels 4
+vtxtable powervalues 25 200 1000 4000
+vtxtable powerlabels 25 200 1 4
+
+# vtx
+vtx 0 6 0 0 1 950 1050
+vtx 1 6 0 0 2 1450 1600
+vtx 2 6 0 0 4 1900 2050
+
+# rxfail
+rxfail 3 h
+
+# master
+set gyro_lpf1_static_hz = 262
+set gyro_lpf2_static_hz = 525
+set dyn_notch_count = 2
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 60
+set dyn_notch_max_hz = 300
+set gyro_lpf1_dyn_min_hz = 262
+set gyro_lpf1_dyn_max_hz = 525
+set acc_calibration = 9,-11,32,1
+set baro_hardware = NONE
+set blackbox_sample_rate = 1/2
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set failsafe_delay = 150
+set failsafe_off_delay = 197
+set failsafe_throttle = 1757
+set failsafe_switch_mode = STAGE2
+set failsafe_throttle_low_delay = 297
+set failsafe_procedure = AUTO-LAND
+set failsafe_recovery_delay = 17
+set bat_capacity = 7000
+set small_angle = 180
+set deadband = 3
+set yaw_deadband = 3
+set pid_process_denom = 4
+set simplified_gyro_filter_multiplier = 105
+set osd_vbat_pos = 2433
+set osd_rssi_pos = 59
+set osd_link_quality_pos = 2101
+set osd_tim_2_pos = 2411
+set osd_flymode_pos = 2457
+set osd_throttle_pos = 2425
+set osd_vtx_channel_pos = 2133
+set osd_crosshairs_pos = 2285
+set osd_ah_pos = 110
+set osd_mah_drawn_pos = 321
+set osd_craft_name_pos = 2081
+set osd_pilot_name_pos = 2113
+set osd_altitude_pos = 33
+set osd_warnings_pos = 14729
+set osd_avg_cell_voltage_pos = 2401
+set osd_sys_distance_pos = 65
+set osd_canvas_width = 30
+set osd_canvas_height = 13
+set debug_mode = GYRO_SCALED
+set vtx_band = 1
+set vtx_channel = 1
+set vtx_power = 2
+set vtx_freq = 3330
+set rpm_filter_min_hz = 70
+set craft_name = '[]
+set pilot_name = =@&
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 71
+set dterm_lpf1_dyn_max_hz = 142
+set dterm_lpf1_static_hz = 71
+set dterm_lpf2_static_hz = 142
+set vbat_sag_compensation = 100
+set iterm_relax_cutoff = 10
+set p_pitch = 61
+set i_pitch = 92
+set d_pitch = 66
+set f_pitch = 99
+set p_roll = 58
+set i_roll = 88
+set d_roll = 57
+set f_roll = 95
+set p_yaw = 58
+set i_yaw = 88
+set f_yaw = 95
+set d_min_roll = 42
+set d_min_pitch = 47
+set thrust_linear = 20
+set feedforward_smooth_factor = 40
+set feedforward_jitter_factor = 8
+set dyn_idle_min_rpm = 30
+set simplified_pids_mode = OFF
+set simplified_master_multiplier = 130
+set simplified_i_gain = 85
+set simplified_d_gain = 140
+set simplified_pi_gain = 130
+set simplified_dmax_gain = 110
+set simplified_feedforward_gain = 80
+set simplified_dterm_filter_multiplier = 95
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set roll_expo = 20
+set pitch_expo = 20
+set yaw_expo = 20
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
